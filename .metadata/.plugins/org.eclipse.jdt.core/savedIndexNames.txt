@@ -1,0 +1,2 @@
+INDEX VERSION 1.126+/home/tristanninet/logiciels/developpement/workspace/.metadata/.plugins/org.eclipse.jdt.core
+1270315800.index
