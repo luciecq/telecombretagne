@@ -1,8 +1,14 @@
 package com.example.telecombretagne;
 
+import java.util.List;
+
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -12,8 +18,8 @@ import android.view.ViewGroup;
 import android.os.Build;
 
 public class MainActivity extends ActionBarActivity {
-
-    @Override
+	
+	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -23,6 +29,8 @@ public class MainActivity extends ActionBarActivity {
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
+        
+       
     }
 
 
@@ -40,7 +48,7 @@ public class MainActivity extends ActionBarActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        if (id == R.id.action_settings) {
+        if (id == R.id.gerer_notifications) {
             return true;
         }
         return super.onOptionsItemSelected(item);
@@ -60,6 +68,21 @@ public class MainActivity extends ActionBarActivity {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
             return rootView;
         }
+    }
+    
+    public void lienLexians (View view) {
+    	 Uri webpage = Uri.parse("http://http://www.telecom-bretagne.eu/lexians/");
+         Intent webIntent = new Intent(Intent.ACTION_VIEW, webpage);
+
+         // Verify it resolves
+         PackageManager packageManager = getPackageManager();
+         List<ResolveInfo> activities = packageManager.queryIntentActivities(webIntent, 0);
+         boolean isIntentSafe = activities.size() > 0;
+
+         // Start an activity if it's safe
+         if (isIntentSafe) {
+         	startActivity(webIntent);
+         }
     }
 
 }

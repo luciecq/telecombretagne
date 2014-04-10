@@ -2,7 +2,8 @@
 <resources>
 
     <string name="app_name">TelecomBretagne</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="bienvenue">Bienvenue à Télécom Bretagne!</string>
+    <string name="gerer_notifications">Gérer les notifications</string>
+    <string name="lien_lexians">Lexians, la lettre d\'information de Télécom Bretagne</string>
 
 </resources>

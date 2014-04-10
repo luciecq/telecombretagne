@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.telecombretagne.MainActivity" >
+
+    <item
+        android:id="@+id/configurer_push"
+        android:orderInCategory="100"
+        android:title="@string/configurer_push"
+        app:showAsAction="never"/>
+
+</menu>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TelecomBretagne</string>
+    <string name="bienvenue">Bienvenue à Télécom Bretagne!</string>
+    <string name="gerer_notifications">Gérer les notifications</string>
+    <string name="glien_lexians">Lexians, la lettre d'information de Télécom Bretagne</string>
+
+</resources>
