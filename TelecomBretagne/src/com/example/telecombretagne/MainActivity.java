@@ -84,5 +84,20 @@ public class MainActivity extends ActionBarActivity {
          	startActivity(webIntent);
          }
     }
+    
+    public void lienCampuschannel (View view) {
+   	 Uri webpage = Uri.parse("http://www.campus-channel.com/telecom-bretagne-programme-ingenieur-prepas.html");
+        Intent webIntent = new Intent(Intent.ACTION_VIEW, webpage);
+
+        // Verify it resolves
+        PackageManager packageManager = getPackageManager();
+        List<ResolveInfo> activities = packageManager.queryIntentActivities(webIntent, 0);
+        boolean isIntentSafe = activities.size() > 0;
+
+        // Start an activity if it's safe
+        if (isIntentSafe) {
+        	startActivity(webIntent);
+        }
+   }
 
 }

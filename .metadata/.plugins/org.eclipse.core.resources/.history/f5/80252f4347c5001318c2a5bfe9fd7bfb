@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.telecombretagne.MainActivity" >
+
+    <item
+        android:id="@+id/Accueil"
+        android:orderInCategory="100"
+        android:title="@string/accueil"
+        app:showAsAction="never"/>
+	<item
+        android:id="@+id/formations"
+        android:orderInCategory="100"
+        android:title="@string/formations"
+        app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.telecombretagne.MainActivity" >
+
+    <item
+        android:id="@+id/accueil"
+        android:orderInCategory="100"
+        android:title="@string/accueil"
+        app:showAsAction="never"/>
+    
+	<item
+        android:id="@+id/formations"
+        android:orderInCategory="100"
+        android:title="@string/formations"
+        app:showAsAction="never"/>
+	
+	   <menu android:id="@+id/sous_menu_formations">
+            <item
+                android:id="@+id/fig"
+                android:orderInCategory="100"
+                android:title="@string/fig"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/fip"
+                android:orderInCategory="100"
+                android:title="@string/fip"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/debouches"
+                android:orderInCategory="100"
+                android:title="@string/debouches"
+                app:showAsAction="never"/>
+        </menu>
+
+    <item
+        android:id="@+id/gerer_notifications"
+        android:orderInCategory="100"
+        android:title="@string/gerer_notifications"
+        app:showAsAction="never"/>
+</menu>
