@@ -20,7 +20,8 @@
                 android:id="@+id/fig"
                 android:orderInCategory="100"
                 android:title="@string/fig"
-                app:showAsAction="never"/>
+                app:showAsAction="never"
+                android:onClick="fig"/>
 
             <item
                 android:id="@+id/fip"

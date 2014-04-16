@@ -22,6 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.telecombretagne.FigPage"
+            android:label="@string/title_activity_fig_page"
+            android:parentActivityName="com.example.telecombretagne.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.telecombretagne.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

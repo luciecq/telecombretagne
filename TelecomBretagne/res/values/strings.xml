@@ -5,10 +5,14 @@
     <string name="bienvenue">Bienvenue à Télécom Bretagne!</string>
     <string name="gerer_notifications">Gérer les notifications</string>
     <string name="lien_lexians">Lexians, la lettre d\'information de Télécom Bretagne</string>
-	<string name="lien_campuschannel">Campus Channel : écoutez l\'avis des élèves</string>
-	<string name="accueil">Accueil</string>
-	<string name="formations">Formations</string>
-	<string name="fig">FIG</string>
-	<string name="fip">FIP</string>
-	<string name="debouches">Débouchés</string>
+    <string name="lien_campuschannel">Campus Channel : écoutez l\'avis des élèves</string>
+    <string name="accueil">Accueil</string>
+    <string name="formations">Formations</string>
+    <string name="fig">FIG</string>
+    <string name="fip">FIP</string>
+    <string name="debouches">Débouchés</string>
+    <string name="title_activity_fig_page">FIG</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
 </resources>
